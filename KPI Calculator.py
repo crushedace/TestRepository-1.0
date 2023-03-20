@@ -11,7 +11,7 @@ def open_txt():
     # code works as intended and removing/messing with it causes more issues.
     text_file = filedialog.askopenfilename(initialdir="C:/KPI FINAL/", title="Open Text File", filetypes=(("Text Files", "*.txt"),))
 
-    text_file = open('Results.txt', 'r')
+    text_file = open('HelloWorld Database.txt', 'r')
     variable = text_file.read()
 
     my_text.insert(END, variable)
@@ -20,7 +20,7 @@ def save_txt():
     # Ignore the line too big, and text_file errors,
     # code works as intended and removing/messing with it causes more issues.
     text_file = filedialog.askopenfilename(initialdir="C:/KPI FINAL/", title="Open Text File", filetypes=(("Text Files", "*.txt"),))
-    text_file = open('Results.txt', 'w+')
+    text_file = open('HelloWorld Database.txt', 'w+')
     text_file.write(my_text.get(1.0, END))
 def calculatebutton():
     global buttonCounter
@@ -31,7 +31,7 @@ def calculatebutton():
     myLabel5["text"] = "Employee Name" + myEntry4.get()
 
     calculate = (float(myEntry2.get()) / float(myEntry1.get()) * 100)
-    text_file = open("Results.txt", "w+")
+    text_file = open("HelloWorld Database.txt", "w+")
     text_file.write("Cases Assigned: " + myEntry1.get() + "\n")
     text_file.write("Cases Closed: " + myEntry2.get() + "\n")
     text_file.write("Current KPI: " + myEntry3.get() + "\n")
