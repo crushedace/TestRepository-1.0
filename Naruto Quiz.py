@@ -25,6 +25,7 @@ def no4():
     print("You are correct!")
 def no5():
     print("Have a seat, baby faced skywalkah")
+    print("test")
 # define widgets
 myLabel1 = Label(root, text=" Is Naruto the current Hokage?")
 myLabel2 = Label(root, text=" Was Tsunade the 5th Hokage? ")
