@@ -7,10 +7,7 @@ root.geometry("400x100")
 
 # definitions
 def open_txt():
-    # Ignore the line too big, and text_file errors,
-    # code works as intended and removing/messing with it causes more issues.
     text_file = filedialog.askopenfilename(initialdir="C:/Hello World/", title="Open Text File", filetypes=(("Text Files", "*.txt"),))
-
     text_file = open('HelloWorld Database.txt', 'r')
     variable = text_file.read()
     text_file.close()
