@@ -22,7 +22,7 @@ def save_txt():
     text_file = filedialog.askopenfilename(initialdir="C:/KPI FINAL/", title="Open Text File", filetypes=(("Text Files", "*.txt"),))
     text_file = open('HelloWorld Database.txt', 'w+')
     text_file.write(my_text.get(1.0, END))
-def calculatebutton():
+def calculate_button():
     global buttonCounter
     myLabel1["text"] = "The button has been clicked " + str(buttonCounter) + "times"
     myLabel2["text"] = "Cases Assigned :" + myEntry1.get()
@@ -65,7 +65,7 @@ myEntry2.insert(0, " ")
 myEntry3.insert(0, " ")
 myEntry4.insert(0, " ")
 # Button Name Variable // Button // Text = Name on button // command = def button
-calc_button = Button(root, text="Calculate!", command=calculatebutton)
+calc_button = Button(root, text="Calculate!", command=calculate_button)
 open_button = Button(root, text="Load File", command=open_txt)
 save_button = Button(root, text="Save File", command=save_txt)
 # place widgets on screen
